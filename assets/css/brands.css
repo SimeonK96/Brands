@@ -1,0 +1,274 @@
+/* =========================================
+   PAGE
+========================================= */
+
+.brands-page {
+  min-height: 100vh;
+
+  background: #fafafa;
+
+  padding: 30px 0;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  padding: 0 30px;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.page-title {
+  margin: 0 0 25px;
+
+  color: #111827;
+
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.brands-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.brand-card {
+  min-width: 0;
+
+  background: #ffffff;
+
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.04);
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+
+/* Small hover effect */
+
+.brand-card:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   IMAGE AREA
+========================================= */
+
+.brand-image {
+  height: 115px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+
+/* =========================================
+   TEMPORARY IMAGE PLACEHOLDER
+========================================= */
+
+.brand-placeholder {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 120px;
+  height: 55px;
+
+  border: 1px dashed #d1d5db;
+
+  color: #9ca3af;
+
+  font-size: 14px;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   BRAND INFORMATION
+========================================= */
+
+.brand-info {
+  height: 58px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+
+.brand-info h2 {
+  margin: 0 0 6px;
+
+  color: #111827;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.status {
+  display: inline-flex;
+
+  align-items: center;
+
+  padding: 2px 7px;
+
+  border-radius: 3px;
+
+  font-size: 8px;
+
+  line-height: 1.3;
+}
+
+
+.status-active {
+  color: #159447;
+
+  background: #eaf8f0;
+}
+
+
+.status-inactive {
+  color: #e15d78;
+
+  background: #fff0f3;
+}
+
+
+/* =========================================
+   BOTTOM DETAILS
+========================================= */
+
+.brand-details {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+}
+
+
+.detail {
+  min-height: 40px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+
+.detail + .detail {
+  border-left: 1px solid #eeeeee;
+}
+
+
+.detail span {
+  margin-bottom: 3px;
+
+  color: #6b7280;
+
+  font-size: 8px;
+}
+
+
+.detail strong {
+  color: #111827;
+
+  font-size: 9px;
+
+  font-weight: 400;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .brands-grid {
+    grid-template-columns:
+      repeat(3, 1fr);
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .brands-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 450px) {
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .brands-grid {
+    grid-template-columns: 1fr;
+  }
+
+}

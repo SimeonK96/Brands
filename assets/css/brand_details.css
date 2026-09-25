@@ -1,0 +1,309 @@
+/* =========================================
+   BRAND DETAILS PAGE
+========================================= */
+
+.brand-details-page {
+  min-height: 100vh;
+  background: #fafafa;
+  padding: 30px 0;
+}
+
+
+/* =========================================
+   MAIN LAYOUT
+========================================= */
+
+.issue-layout {
+  display: grid;
+
+  grid-template-columns: 145px minmax(0, 1fr);
+
+  gap: 20px;
+
+  align-items: start;
+}
+
+
+/* =========================================
+   LEFT BRAND CARD
+========================================= */
+
+.brand-details-card {
+  background: #ffffff;
+
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.brand-logo {
+  height: 102px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+
+.brand-logo-placeholder {
+  width: 100px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px dashed #d1d5db;
+
+  color: #16a34a;
+
+  font-size: 17px;
+  font-weight: 500;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   BRAND NAME
+========================================= */
+
+.brand-name-section {
+  min-height: 60px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+
+.brand-name-section h2 {
+  margin: 0 0 7px;
+
+  color: #111827;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.status {
+  display: inline-flex;
+
+  padding: 2px 7px;
+
+  border-radius: 3px;
+
+  font-size: 8px;
+  line-height: 1.3;
+}
+
+
+.status-active {
+  color: #159447;
+  background: #eaf8f0;
+}
+
+
+.status-inactive {
+  color: #e15d78;
+  background: #fff0f3;
+}
+
+
+/* =========================================
+   FEATURED DETAILS
+========================================= */
+
+.featured-details {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+
+.featured-detail {
+  min-height: 40px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 5px;
+}
+
+
+.featured-detail + .featured-detail {
+  border-left: 1px solid #eeeeee;
+}
+
+
+.featured-detail span {
+  margin-bottom: 3px;
+
+  color: #6b7280;
+
+  font-size: 8px;
+}
+
+
+.featured-detail strong {
+  color: #111827;
+
+  font-size: 9px;
+  font-weight: 400;
+}
+
+
+/* =========================================
+   OTHER INFORMATION
+========================================= */
+
+.brand-information {
+  padding: 9px;
+}
+
+
+.information-row {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 7px;
+}
+
+
+.information-row span,
+.information-label {
+  margin-bottom: 2px;
+
+  color: #6b7280;
+
+  font-size: 8px;
+}
+
+
+.information-row strong {
+  color: #111827;
+
+  font-size: 8px;
+  font-weight: 400;
+}
+
+
+/* =========================================
+   KEYWORDS
+========================================= */
+
+.keywords-section {
+  margin-top: 10px;
+}
+
+
+.keywords {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 3px;
+}
+
+
+.keyword {
+  padding: 2px 5px;
+
+  color: #555555;
+
+  background: #f2f4f7;
+
+  border-radius: 3px;
+
+  font-size: 7px;
+}
+
+
+.expand-button {
+  margin-top: 5px;
+
+  padding: 0;
+
+  border: 0;
+
+  color: #1677ff;
+
+  background: transparent;
+
+  font-size: 8px;
+
+  cursor: pointer;
+}
+
+
+/* =========================================
+   SOCIAL NETWORKS
+========================================= */
+
+.social-networks {
+  min-height: 45px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+
+  border-top: 1px solid #eeeeee;
+}
+
+
+.social-icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 18px;
+  height: 18px;
+
+  color: #777777;
+
+  font-size: 10px;
+}
+
+
+/* =========================================
+   RESPONSIVE LAYOUT
+========================================= */
+
+@media (max-width: 700px) {
+
+  .issue-layout {
+    grid-template-columns: 1fr;
+  }
+
+}
